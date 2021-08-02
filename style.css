@@ -4,10 +4,11 @@
 }
 body {
 box-sizing: border-box;
+min-height: 100vh;
 }
 .container {
     width: 375px;
-    height: 700px;
+    height: auto;
     margin: auto;
     background-color: pink;
     border: 1px solid lightgrey;
@@ -28,6 +29,10 @@ header p {
 .banner{
  margin: auto;
  background-color: gainsboro;
+ height: 500px;
+}
+.left-side {
+    display: none;
 }
 .banner img {
     width: 100%;
@@ -57,8 +62,9 @@ header p {
     background-color: white;
     padding-bottom: 24px;
     border: 1px solid lightgrey;
+    height: 500px;
 }
-.info img {
+.right-side img {
     width: 90%;
     margin: 16px;
 }
@@ -82,6 +88,7 @@ header p {
     background-color: white;
     padding-bottom: 32px;
     border: 1px solid lightgrey;
+    height: 500px;
 }
 .courses h2 {
     text-align: center;
@@ -99,6 +106,7 @@ header p {
 /* thesis */
 .thesis {
     background-color: white;
+    height: 500px;
 }
 .thesis h2 {
     padding: 32px 32px 16px 32px;
@@ -121,7 +129,7 @@ footer p {
      background-color: wheat;
  }
  .container {
-   width: 736px;
+   width: 1000px;
  }
  /* header */
  header {
@@ -144,5 +152,64 @@ footer p {
  }
  header span {
      color: royalblue;
+     margin-right: 240px;
  }
+ /* banner */
+ .banner {
+     display: flex;
+     width: 100%;
+ }
+ .banner img {
+    width: 60%;
+    margin: 32px 24px;
+}
+.welcome {
+    width: 40%;
+    margin: auto;
+}
+ /* info */
+ .info {
+     display: flex;
+     width: 100%;
+ }
+ .left-side {
+     display: block;
+ }
+ .left-side img {
+     width: 92%;
+     margin: 32px 24px;
+ }
+ .img-text {
+     width: 65%;
+     margin: 0 24px;
+     padding-bottom: 32px;
+ }
+.img-text h2, h4 {
+    margin-bottom: 24px;
+}
+.right-side img {
+ width: 45%;
+ height: auto;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
+}
+.top, .mid, .bottom {
+    display: flex;
+    width: 100%;
+    height: 33%;
+}
+.text {
+    margin: 0 auto;
+}
+.text h3 {
+    font-size: .9em;
+}
+.text h4 {
+    font-size: .5em;
+}
+.text a {
+    font-size: .5em;
+}
 } 
