@@ -29,7 +29,7 @@ header p {
 .banner{
  margin: auto;
  background-color: gainsboro;
- height: 500px;
+ height: 700px;
 }
 .left-side {
     display: none;
@@ -62,7 +62,14 @@ header p {
     background-color: white;
     padding-bottom: 24px;
     border: 1px solid lightgrey;
-    height: 500px;
+    height: 700px;
+}
+.left-side {
+    display: none;
+}
+.right-side {
+    display: flex;
+    flex-direction: column;
 }
 .right-side img {
     width: 90%;
@@ -72,7 +79,7 @@ header p {
     margin: 16px 32px;
 }
 .text h3 {
-    font-size: 1.4em;
+    font-size: 1.3em;
 }
 .text h4 {
     margin: 16px 0;
@@ -81,14 +88,17 @@ header p {
 }
 .text a {
     text-decoration: none;
-    font-size: 1.1em;
+    font-size: 1em;
+}
+.vl {
+    display: none;
 }
 /* courses */
 .courses {
     background-color: white;
     padding-bottom: 32px;
     border: 1px solid lightgrey;
-    height: 500px;
+    height: 700px;
 }
 .courses h2 {
     text-align: center;
@@ -103,10 +113,13 @@ header p {
     background-color: gainsboro;
     margin: 8px;
 }
+.courses img { 
+    display: none;
+}
 /* thesis */
 .thesis {
     background-color: white;
-    height: 500px;
+    height: 700px;
 }
 .thesis h2 {
     padding: 32px 32px 16px 32px;
@@ -174,42 +187,96 @@ footer p {
  }
  .left-side {
      display: block;
+     width: 60%;
  }
  .left-side img {
      width: 92%;
+     height: 430px;
      margin: 32px 24px;
  }
  .img-text {
-     width: 65%;
+     width: 95%;
      margin: 0 24px;
      padding-bottom: 32px;
  }
 .img-text h2, h4 {
     margin-bottom: 24px;
 }
-.right-side img {
- width: 45%;
- height: auto;
+.img-text h2 {
+    font-size: 2em;
+}
+.img-text h4 {
+    font-size: 1.2em;
+    font-weight: 500;
+}
+.img-text p {
+    font-weight: 700;
+}
+.vl {
+    display: block;
+    border-left: 1px solid lightgrey; 
+    height: 725px; 
 }
 .right-side {
     display: flex;
     flex-direction: column;
+    width: 40%;
+    height: 700px;
 }
 .top, .mid, .bottom {
     display: flex;
     width: 100%;
-    height: 33%;
+    height: 32%;
+    border: 1px solid lightgrey;
 }
-.text {
-    margin: 0 auto;
+.top img {
+    width: 35%;
+}
+.top .text {
+    width: 65%;
+    margin: auto;
+}
+.mid img {
+    width: 35%;
+}
+.mid .text {
+    width: 65%;
+    margin: auto;
+}
+.bottom {
+    background-color: gainsboro;
+}
+.bottom img {
+    width: 35%;
+}
+.bottom .text {
+    width: 65%;
+    margin: auto;
 }
 .text h3 {
-    font-size: .9em;
+    font-size: 1.17em;
 }
 .text h4 {
-    font-size: .5em;
+    font-size: .8em;
 }
 .text a {
-    font-size: .5em;
+    font-size: .8em;
+}
+/* courses */
+.courses {
+    background-color: gainsboro;
+    display: flex;
+    margin-top: 20px;
+}
+.courses h2 {
+    width: 100%;
+    height: 64px;
+    top: 0;
+}
+.courses h3, h4, p {
+    display: none;
+}
+.courses img {
+    display: block;
 }
 } 
