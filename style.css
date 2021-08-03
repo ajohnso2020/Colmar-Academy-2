@@ -60,7 +60,6 @@ header p {
 /* info */
 .info {
     background-color: white;
-    padding-bottom: 24px;
     border: 1px solid lightgrey;
     height: 700px;
 }
@@ -72,23 +71,24 @@ header p {
     flex-direction: column;
 }
 .right-side img {
-    width: 90%;
-    margin: 16px;
+    width: 92%;
+    height: 100px;
+    margin: 12px;
 }
 .text {
-    margin: 16px 32px;
+    margin: 12px;
 }
 .text h3 {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 .text h4 {
-    margin: 16px 0;
-    font-size: 1.1em;
+    margin: 12px 0;
+    font-size: .8em;
     font-weight: 400;
 }
 .text a {
     text-decoration: none;
-    font-size: 1em;
+    font-size: .8em;
 }
 .vl {
     display: none;
@@ -96,24 +96,26 @@ header p {
 /* courses */
 .courses {
     background-color: white;
-    padding-bottom: 32px;
     border: 1px solid lightgrey;
     height: 700px;
 }
 .courses h2 {
     text-align: center;
     font-size: 2em;
-    padding: 32px 32px 16px 32px;
+    padding: 32px;
 }
-.courses p {
+.courses h3 {
     font-size: 1.17em;
     border: 1px solid lightgrey;
-    padding: 16px 16px 24px 16px;
     font-weight: 700;
+    padding: 16px;
     background-color: gainsboro;
     margin: 8px;
 }
 .courses img { 
+    display: none;
+}
+.courses h4, p {
     display: none;
 }
 /* thesis */
@@ -199,18 +201,19 @@ footer p {
      margin: 0 24px;
      padding-bottom: 32px;
  }
-.img-text h2, h4 {
-    margin-bottom: 24px;
-}
 .img-text h2 {
     font-size: 2em;
+    display: block;
 }
 .img-text h4 {
     font-size: 1.2em;
     font-weight: 500;
+    display: block;
+    margin: 16px 0;
 }
 .img-text p {
     font-weight: 700;
+    display: block;
 }
 .vl {
     display: block;
@@ -226,18 +229,20 @@ footer p {
 .top, .mid, .bottom {
     display: flex;
     width: 100%;
-    height: 32%;
+    height: 31%;
     border: 1px solid lightgrey;
 }
 .top img {
-    width: 35%;
+    width: 40%;
+    height: auto;
 }
 .top .text {
     width: 65%;
     margin: auto;
 }
 .mid img {
-    width: 35%;
+    width: 40%;
+    height: auto;
 }
 .mid .text {
     width: 65%;
@@ -247,7 +252,8 @@ footer p {
     background-color: gainsboro;
 }
 .bottom img {
-    width: 35%;
+    width: 40%;
+    height: auto;
 }
 .bottom .text {
     width: 65%;
@@ -265,16 +271,36 @@ footer p {
 /* courses */
 .courses {
     background-color: gainsboro;
-    display: flex;
-    margin-top: 20px;
 }
 .courses h2 {
     width: 100%;
     height: 64px;
-    top: 0;
 }
-.courses h3, h4, p {
-    display: none;
+.image-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+.software, .computer-art, .design, .data, .business .marketing {
+    display: flex;
+    flex-flow: column wrap;
+}
+.software img, .computer-art img, .design img, .data img, .business img, .marketing img{
+   width: 275px;
+}
+.software-text, .computer-art-text, .design-text, .data-text, .business-text, .marketing-text {
+   width: 275px;
+   background-color: white;
+}
+
+.courses h4, p {
+    display: block;
+}
+.courses h3 {
+   border: 0;
+   margin: 0;
+   padding: 0;
+   background-color: white;
 }
 .courses img {
     display: block;
