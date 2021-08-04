@@ -101,21 +101,21 @@ header p {
 }
 .courses h2 {
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
     padding: 32px;
 }
 .courses h3 {
-    font-size: 1.17em;
+    font-size: 1.9em;
     border: 1px solid lightgrey;
     font-weight: 700;
     padding: 16px;
     background-color: gainsboro;
-    margin: 8px;
+    margin: 12px;
 }
 .courses img { 
     display: none;
 }
-.courses h4, p {
+.courses h4, .courses p {
     display: none;
 }
 /* thesis */
@@ -126,12 +126,18 @@ header p {
 .thesis h2 {
     padding: 32px 32px 16px 32px;
     text-align: center;
-    font-size: 2em;
+    font-size: 2.5em;
+}
+.thesis p {
+    display: none;
 }
 .thesis video {
     width: 100%;
 }
 .thesis h3 {
+    display: none;
+}
+.thesis img {
     display: none;
 }
 /* footer */
@@ -141,6 +147,7 @@ header p {
 }
 .copyright {
     padding: 16px 10px;
+    display: block;
 }
 .terms {
     display: none;
