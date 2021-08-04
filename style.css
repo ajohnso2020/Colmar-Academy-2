@@ -131,14 +131,21 @@ header p {
 .thesis video {
     width: 100%;
 }
+.thesis h3 {
+    display: none;
+}
 /* footer */
 .footer {
     background-color: white;
     padding-top: 24px;
 }
-footer p {
+.copyright {
     padding: 16px 10px;
 }
+.terms {
+    display: none;
+}
+
 @media only screen and (min-width: 736px) {  
  body {
      background-color: wheat;
@@ -238,8 +245,9 @@ footer p {
 }
 .top .text {
     width: 65%;
+    height: auto;
     margin: auto;
-}
+}  
 .mid img {
     width: 40%;
     height: auto;
@@ -279,30 +287,111 @@ footer p {
 .image-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
+    flex: 1 1 0%;
+    
 }
 .software, .computer-art, .design, .data, .business .marketing {
     display: flex;
     flex-flow: column wrap;
+    margin: 12px 0;
 }
 .software img, .computer-art img, .design img, .data img, .business img, .marketing img{
-   width: 275px;
+   width: 250px;
+   height: 50%;
 }
 .software-text, .computer-art-text, .design-text, .data-text, .business-text, .marketing-text {
-   width: 275px;
+   width: 250px;
    background-color: white;
+   height: 50%;
 }
 
 .courses h4, p {
     display: block;
+    font-weight: 400;
+    margin: 5px 0;
+}
+.courses h4 {
+    text-transform: uppercase;
 }
 .courses h3 {
    border: 0;
    margin: 0;
    padding: 0;
    background-color: white;
+   margin-top: 5px;
+
 }
 .courses img {
     display: block;
+}
+/* thesis */
+.image-container-2 {
+    display: flex;
+}
+.thesis h2 {
+    width: 100%;
+    height: 64px;
+    padding: 0;
+    display: block;
+    text-align: center;
+    font-size: 2em;
+    line-height: 64px;
+}
+.thesis h3, p, img {
+    display: block;
+}
+.left-side-2 {
+    margin-left: 24px;
+}
+.left-side-2 h3 {
+    margin-bottom: 24px;
+}
+.right-side-2 {
+   display: flex;
+   flex-direction: column;
+}
+.top-2, .mid-2  {
+    display: flex;
+    width: 100%;
+    height: 35%;
+    border: 1px solid lightgrey;
+}
+.top-2, .mid-2 {
+    display: flex;
+    flex-wrap: wrap;
+}
+.top-2 {
+    background-color: gainsboro;
+}
+.top-2 img, .mid-2 img {
+    width: 33%;
+    height: 100%;
+}
+.top-2-text, .mid-2-text {
+    width: 65%;
+    height: auto;
+    margin: auto;
+}
+.thesis video {
+    width: 650px;
+    height: 500px;
+    margin-top: -60px;
+}
+.left-side-2 {
+    flex: 1;
+}
+/* footer */
+.footer {
+    display: flex;
+    justify-content: space-between;
+}
+.terms {
+    display: block;
+    padding: 16px 10px;
+    margin-right: 24px;
+}
+.copyright {
+    margin-left: 24px;
 }
 } 
